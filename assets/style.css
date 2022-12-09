@@ -38,16 +38,16 @@ body{
 
 @keyframes animated {
     0% {
-        color: #c5c5c5;
+        color:black;
     }
     25%{
         color: #575757;
     }
     50%{
-        color:black;
+        color: #c5c5c5;
     }
     100% {
-        color: #d7d7d7;
+        color:black;
     }
 }
 
