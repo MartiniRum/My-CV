@@ -1,0 +1,64 @@
+body{
+    background-image: url(img/mountains.jpg);
+    background-size: cover;
+    animation-name: bg;
+    animation-delay: 0ms;
+    animation-duration:15s;
+    animation-iteration-count:infinite;
+} 
+.chrome {
+    animation-name: animated, moving, expand;
+    animation-delay: 0ms;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    -webkit-background-clip: text;
+}
+.op-hover:hover{
+    opacity: 0.6;
+}
+
+.size-hover:hover{
+    font-size: x-large;
+}
+
+@keyframes bg {
+    0% {
+        background-image: url('img/m1.jpg');
+    }
+    30%{
+        background-image: url('img/m2.jpg');
+    }
+    65% {
+        background-image: url('img/mountains.jpg');
+    }
+    100% {
+        background-image: url('img/m1.jpg');
+    }
+}
+
+@keyframes animated {
+    0% {
+        color: #c5c5c5;
+    }
+    25%{
+        color: #575757;
+    }
+    50%{
+        color:black;
+    }
+    100% {
+        color: #d7d7d7;
+    }
+}
+
+@keyframes moving {
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes expand {
+    50% {
+        letter-spacing: 1px;
+    }
+}
